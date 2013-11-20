@@ -7,12 +7,8 @@ description      "Cookbook provides Tomcat application server implementation" +
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          "13.5.0"
 
-supports "centos"
-supports "redhat"
-supports "ubuntu"
-
-recipe "ACME_app::install_app",
+recipe "ACME-app::install_app",
   "Installs application on server."
   
-recipe "ACME_app::configure_app",
+recipe "ACME-app::configure_app",
   "Configures application on server."
